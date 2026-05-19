@@ -1,0 +1,274 @@
+# ============================================================
+# Python
+# ============================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+junit.xml
+test-results/
+
+# Translations
+*.mo
+*.pot
+
+# Django/Flask stuff (if any)
+*.sqlite3
+*.sqlite3-journal
+instance/
+.webassets-cache
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# pyenv / pipenv / poetry / pdm / hatch
+.python-version
+Pipfile.lock
+poetry.lock.bak
+.pdm.toml
+.pdm-python
+.pdm-build/
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Virtual environments
+.env
+.env.*
+!.env.example
+!.env.sample
+.venv
+.venv.*
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder / Rope
+.spyderproject
+.spyproject
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy / ruff / pyright / pytype
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.pyright/
+
+# Cython
+cython_debug/
+
+# uv
+.uv/
+uv.lock.bak
+
+# ============================================================
+# ML / NLP artifacts
+# ============================================================
+# Model weights — usually large, store via DVC/LFS/S3
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+*.h5
+*.pb
+*.tflite
+*.gguf
+
+# Hugging Face / Transformers cache
+.cache/
+.huggingface/
+transformers_cache/
+hf_cache/
+
+# spaCy models / Presidio models (managed externally)
+models/
+weights/
+checkpoints/
+embeddings/
+vectors/
+
+# Datasets — never commit raw PII
+data/raw/
+data/interim/
+data/processed/
+datasets.local/
+*.csv.local
+*.jsonl.local
+*.parquet.local
+
+# DVC
+.dvc/cache
+.dvc/tmp
+.dvc/plots
+
+# MLflow / W&B
+mlruns/
+mlartifacts/
+wandb/
+
+# ============================================================
+# Secrets
+# ============================================================
+*.pem
+*.key
+*.crt
+secrets/
+
+# ============================================================
+# IDE / Editor
+# ============================================================
+.idea/
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.iml
+*.ipr
+*.iws
+.vs/
+.history/
+.cursor/
+.windsurf/
+.zed/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*.swn
+.*.swp
+*~
+.project
+.pydevproject
+.settings/
+.spyderproject
+.spyproject
+
+# ============================================================
+# OS
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ============================================================
+# Logs
+# ============================================================
+logs/
+*.log
+pip-log.txt
+
+# ============================================================
+# AI / Agent tooling
+# ============================================================
+.omc/
+.claude/
+.claude-cache/
+.cursor-cache/
+.aider*
+.continue/
+.gemini/
+.codex/
+CLAUDE.local.md
+AGENTS.local.md
+
+# ============================================================
+# Local / Temp / Backup
+# ============================================================
+tmp/
+temp/
+.tmp/
+*.bak
+*.backup
+*.old
+*.orig
+
+# ============================================================
+# Project-specific (Detection Engine)
+# ============================================================
+# Local dictionaries / test corpora (may contain PII)
+dictionaries.local/
+corpora.local/
+test_corpora.local/
+fixtures.local/
+*.dict.local.txt
+
+# Benchmarks
+benchmarks/results/
+benchmarks/*.json.local
