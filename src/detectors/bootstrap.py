@@ -1,7 +1,14 @@
 """Boot-time detector wiring. Each phase adds a register_<phase>() call.
 
-P1: register_global_privacy()    — domain-agnostic PII baseline.
+P1: register_global_privacy()    — domain-agnostic PII baseline (detectors
+    carry domain="global"/"*", so registry.resolve() includes them for every
+    request domain). The Policy-side "privacy" leaf domain reuses this same
+    baseline — no separate detector module is required for it.
 P2: register_manufacturing_food() — placeholder, not yet implemented.
+
+The "privacy" domain is intentionally NOT gated here: enabling it on the
+Policy side toggles the 245-rule bundle, while detection's PII patterns ride
+the always-on "global" baseline.
 """
 from __future__ import annotations
 
